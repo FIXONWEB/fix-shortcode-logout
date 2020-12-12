@@ -7,7 +7,7 @@
  * Author URI:      https://agencia.fixonweb.com.br
  * Text Domain:     fix-logout
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.1
  *
  * @package         Fix_Logout
  */
@@ -21,7 +21,6 @@ $fix1607772760_check 		= Puc_v4_Factory::buildUpdateChecker($fix1607772760_url_u
 register_activation_hook( __FILE__, 'fix1607772760_activation_hook' );
 function fix1607772760_activation_hook() {
     add_role( 'fix-administrativo', 'fix-administrativo', array( 'read' => true, 'level_0' => true ) );
-    //fix1607772760_create_module();
 }
 
 add_action('wp_enqueue_scripts', "fix1607772760_enqueue_scripts");
