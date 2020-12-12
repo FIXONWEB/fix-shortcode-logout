@@ -7,15 +7,17 @@
  * Author URI:      https://agencia.fixonweb.com.br
  * Text Domain:     fix-logout
  * Domain Path:     /languages
- * Version:         0.1.2
+ * Version:         0.1.4
  *
  * @package         Fix_Logout
  */
 
+//git@github.com:FIXONWEB/fix-shortcode-logout.git
+
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 require 'plugin-update-checker.php';
-$fix1607772760_url_update 	= 'https://github.com/fixonweb/fix-logout';
-$fix1607772760_slug 		= 'fix-logout/fix-logout';
+$fix1607772760_url_update 	= 'https://github.com/fixonweb/fix-shortcode-logout.git';
+$fix1607772760_slug 		= 'fix-logout/fix-shortcode-logout.git';
 $fix1607772760_check 		= Puc_v4_Factory::buildUpdateChecker($fix1607772760_url_update,__FILE__,$fix1607772760_slug);
 
 register_activation_hook( __FILE__, 'fix1607772760_activation_hook' );
